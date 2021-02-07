@@ -24,8 +24,8 @@ Open [http://localhost:3001](http://localhost:3001) with your browser to see the
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Vercel Documentation](https://vercel.com/docs) - learn how to deploy the project
-- [Pusher Channels Documentation](https://pusher.com/docs/channels) - learn about push realtime connections
+- [Pusher Channels Documentation](https://pusher.com/docs/channels) - learn about pusher realtime features
