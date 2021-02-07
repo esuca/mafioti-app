@@ -1,11 +1,12 @@
 // make it work make it right make it fast
+import {shuffle} from "./utils/shuffle";
 
 type PlayerRole = 'CITIZEN' | 'DOCTOR' | 'POLICE' | 'KILLER'
 export type Player = { name: string, role: PlayerRole }
 
 export function assignPlayersRole(players: Player[], killersQuantity: number = 3) {
-
 	const newPlayers = shuffle(players)
+
 	newPlayers[0].role = 'DOCTOR'
 	newPlayers[1].role = 'POLICE'
 
@@ -15,23 +16,4 @@ export function assignPlayersRole(players: Player[], killersQuantity: number = 3
 	}
 
 	return newPlayers
-}
-
-function shuffle(array: any[]) {
-	let currentIndex = array.length, temporaryValue, randomIndex;
-
-	// While there remain elements to shuffle...
-	while (0 !== currentIndex) {
-
-		// Pick a remaining element...
-		randomIndex = Math.floor(Math.random() * currentIndex);
-		currentIndex -= 1;
-
-		// And swap it with the current element.
-		temporaryValue = array[currentIndex];
-		array[currentIndex] = array[randomIndex];
-		array[randomIndex] = temporaryValue;
-	}
-
-	return array;
 }

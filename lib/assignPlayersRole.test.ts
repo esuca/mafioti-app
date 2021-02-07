@@ -1,6 +1,6 @@
 import {assignPlayersRole, Player} from "./assignPlayersRole";
 
-describe('do x', () => {
+describe('assignPlayersRole', () => {
 	const players: Player[] = [
 		{
 			name: "Alex",
@@ -30,7 +30,6 @@ describe('do x', () => {
 	]
 
 	test('should assign doctor role to one of them', () => {
-
 		const result = assignPlayersRole(players)
 
 		expect(result.some(player => player.role === 'DOCTOR')).toBe(true)
